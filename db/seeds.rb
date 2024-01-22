@@ -1,9 +1,98 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+puts "🌱 Seeding things..."
+
+Subject.create!([
+  {
+  name: "Art",
+ description: "blach blah",
+ url: "http://localhost:3000/subjects/art"
+},
+{
+  name: "Language Arts",
+  description: "blach blah",
+  url: "http://localhost:3000/subjects/language_arts"
+},
+{
+  name: "Science",
+  description: "blach blah",
+  url: "http://localhost:3000/subjects/Science"
+ 
+},
+{
+  name: "Theatre",
+  description: "blach blah",
+  url: "http://localhost:3000/subjects/theatre"
+
+},
+{
+  name: "Drama",
+  description: "blach blah",
+  url: "http://localhost:3000/subjects/drama"
+ 
+}
+])
+
+
+                        Resource.create!([
+                          {
+                            name: "the thingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 1
+                          },
+                          {
+                            name: "the thingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 2
+                          }, 
+                          {
+                            name: "the thingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 3
+                          }, 
+                          {
+                            name: "the thingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 4
+                          },
+                          {
+                            name: "the thingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 5
+                          },
+                          {
+                            name: "the pingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 1
+                          },
+                          {
+                            name: "the pingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 2
+                          }, 
+                          {
+                            name: "the pingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 3
+                          }, 
+                          {
+                            name: "the pingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 4
+                          },
+                          {
+                            name: "the pingy resource",
+                            description: "blah blah blah",
+                            url: "www.faker.com",
+                            subject_id: 5
+                          }
+                        ])
+
+puts "✅ Done seeding!"

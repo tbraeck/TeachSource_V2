@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @create_resource %>
+
+<div>
+  <%= link_to "Edit this create resource", edit_create_resource_path(@create_resource) %> |
+  <%= link_to "Back to create resources", create_resources_path %>
+
+  <%= button_to "Destroy this create resource", @create_resource, method: :delete %>
+</div>
