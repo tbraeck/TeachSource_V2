@@ -1,2 +1,0 @@
-class CreateResource < ApplicationRecord
-end
